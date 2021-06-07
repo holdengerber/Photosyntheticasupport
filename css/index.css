@@ -2,7 +2,7 @@
 .bgimage {
   position: relative;
     width:100vw;
-    height:650px;
+    height:600px;
     background: url('../images/supportbanner.jpg');
     background-repeat: no-repeat;
     background-position: center top;
@@ -440,13 +440,14 @@ background: hsl(0, 0%, 93%);}
 .supportcard {
   width: 80%;
 height: auto;
-padding-top: 20%;
-padding-bottom: 10%;
+padding-top: 15%;
+padding-bottom: 7%;
 padding-left: 0px !important;
 padding-right: 0px !important;
 background: #ffffff;
 box-shadow: 10px 10px 20px rgba(0,0,0,0.15);
-border: solid 1px rgb(206, 206, 206);}
+border: solid 1px rgb(206, 206, 206);
+border-radius: 4px;}
 
 .threecolumnmiddle{
   margin-left: auto;
@@ -476,7 +477,7 @@ font-weight: bold;
 @media only screen and (max-width: 850px) and (min-width: 570px) {.supportcard p2 {display: none}}
 
 .supportitem {
-  height: 75px;
+  height: 50px;
   width: auto;
   margin-left: auto;
   margin-right: auto;
@@ -500,6 +501,7 @@ height: auto;}
   padding-bottom: 3%;
   min-height: 250px;
   background: white;
+  border-radius: 3px;
 }
 
 @media only screen and (max-width: 650px)  {.supportcontainer {
@@ -555,7 +557,9 @@ height: auto;}
       margin-left: auto;
     margin-right: auto;}
 
-    #navBackground {
-      box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
-      }
+    @media only screen and (max-width: 575px) {
+      #navBackground {
+          box-shadow: 0px 10px 20px rgba(0,0,0,0.05);
+          }
+        }
     
