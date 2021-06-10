@@ -464,6 +464,7 @@ margin-right: auto;
   margin-left: auto !important;
   margin-right: auto;
   width: 60% !important;
+  height: 80% !important;
 }}
 
 .supportcard:hover {transform:scale(1.02,1.02);
@@ -489,6 +490,10 @@ font-weight: bold;
   width: auto !important;
 }}
 
+@media only screen and (max-width: 800px) and (min-width: 575px) {.supportitem {
+  height: 40px !important;
+  width: auto !important;
+}}
 
 #body {background: #f0f0f0;
 height: auto;}
