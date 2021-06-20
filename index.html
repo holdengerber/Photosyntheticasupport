@@ -16,8 +16,11 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
 </head>
 <body> 
-    <section class="bgimage">
-        <div class="container-fluid" id="navbackground">
+
+    <section id="herobg">
+
+<!--Desktop Navigation Logo !-->
+        <div class="container-fluid" id="navBackground">
             <nav class="navbar navbar-expand-md">
                 <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                     <ul class="navbar-nav mr-auto">
@@ -26,6 +29,8 @@
                         </li>
                     </ul>
                 </div>
+
+<!--Desktop Navigation Links !-->
                 <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
@@ -36,116 +41,141 @@
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#"><p2 style="font-weight: bold; color: #267302">SUPPORT</p2>
-                            <br><div class="selectedlink"></div></a>
+                            <br><div class="selected"></div></a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <!-- My Javascript Mobile Dropdown Navigation !-->
-            <a class="nav-link" href="https://holdengerber.github.io/Photosynthetica/"><img src="images/photosynthetica.png" width="260px" height="auto" id="logo"></a>
-    <a href="javascript:void(0)" class="hamburgerMenu"><div class="hamburger open"></div></a>
-        <div class="mobileNav"></a>
-          <form action="#" id="mobileNavItems">
-            <a href="https://holdengerber.github.io/Photosyntheticablog/"><h3>BLOG</h3></a>
-          <a href="#myWork"><h3>SUPPORT</h3></a>
-          </form>
+            
+<!-- My Javascript Mobile Dropdown Navigation !-->
+        <a class="nav-link" href="https://holdengerber.github.io/Photosynthetica/"><img src="images/photosynthetica.png" width="260px" height="auto" id="logo"></a>
+            <a href="javascript:void(0)" class="hamburgerMenu"><div class="hamburger open"></div></a>
+          <div class="mobileNav"></a>
+            <form action="#" id="mobileNavItems">
+              <a href="https://holdengerber.github.io/Photosyntheticablog/"><h3>BLOG</h3></a>
+              <a href="#myWork"><h3>SUPPORT</h3></a>
+            </form>
+          </div>
         </div>
-      </div>
-            <div class="blankspaceresponsive"></div>
-            <div class="row center thin">
-              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 offset-lg-2 offset-md-2 offset-sm-2 offset-xs-2" id="herocontent">
-                <h1>Need some help?</h1>
-                <br>
-                <br>
-                <div class="input-group">
-                  <input type="search" class="form-control rounder" placeholder="Search by topics, keywords, or phrases." aria-label="Search"
-                    aria-describedby="search-addon" />
+
+<!-- Hero Banner Heading !-->
+        <div class="blankSpace"></div>
+        
+        <div class="row center thin">
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 offset-lg-2 offset-md-2 offset-sm-2 offset-xs-2 heroBannerContent">
+            <h1>Need some help?</h1>
+            <br>
+            <br>
+
+<!-- Search Bar !-->
+              <div class="input-group">
+                <input type="search" class="form-control rounded" placeholder="Search by topics, keywords, or phrases." aria-label="Search" aria-describedby="search-addon" />
                   <button type="button" class="btn">SEARCH</button>
-                </div>
-                <br>
-                <div class="blankspacesmallresponsive"></div>
-                <br>
-                <br>
-                <div class="row center thin">
-                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><div class="supportcard">
-                    <img src="images/faq.png" class="supportitem">
+              </div>
+              <br>
+              <div class="blankSpaceSmall"></div>
+              <br>
+              <br>
+
+<!-- FAQ Support Card !-->
+              <div class="row center thin">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <div class="supportCard">
+                    <img src="images/faq.png" class="supportItem">
                     <br>
                     <br>
-                    <p2>FAQ</p2></div>
-                    <div class="blankspacesmallresponsive"></div>
+                    <p2>FAQ</p2>
                   </div>
-                  <div class="blankspacesmallresponsive"></div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                      <div class="supportcard threecolumnmiddle">
-                      <img src="images/news.png" class="supportitem">
-                      <br>
-                      <br>
-                      <p2>News</p2></div>
-                      <div class="blankspacesmallresponsive"></div></div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><div class="supportcard threecolumnright">
-                          <img src="images/chat.png" class="supportitem">
-                          <br>
-                          <br>
-                          <p2>Live Chat</p2></div>
-                          <div class="blankspacesmallresponsive"></div></div>
+                  <div class="blankSpaceSmall"></div>
                 </div>
+
+<!-- News Support Card !-->
+                <div class="blankSpaceSmall"></div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <div class="supportCard middleCard">
+                    <img src="images/news.png" class="supportItem">
+                      <br>
+                      <br>
+                      <p2>News</p2>
+                  </div>
+                  <div class="blankSpaceSmall"></div>
+                </div>
+
+<!-- Chat Support Card !-->
+                  <div class="blankspaceSmall"></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                      <div class="supportCard rightCard">
+                        <img src="images/chat.png" class="supportItem">
+                          <br>
+                          <br>
+                          <p2>Live Chat</p2>
+                      </div>
+
+                      <div class="blankSpaceSmall"></div>
+
+                    </div>
               </div>
           </div>
         </div>
-      </section>
-      <section id="body">
-        <div class="row thin">
-          <div class="responsivegap"></div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 offset-lg-2 offset-md-2 offset-sm-2 offset-xs-2">
-            </div></div>
-            <div class="row thin">
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 offset-lg-2 offset-md-2 offset-sm-2 offset-xs-2">
-                </div></div>
-        <div class="row thin">
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 offset-lg-2 offset-md-2 offset-sm-2 offset-xs-2">
-            <div class="supportcontainer">
-              <p2 style="font-weight:bold">Popular FAQ</p2>
-              <br>
-              <br>
-              <ul><p1>
-                <li class="underlinelink">one</li>
-                <li class="underlinelink">one</li>
-                <li class="underlinelink">one</li>
-                <li class="underlinelink">one</li></p1>
-              </ul>
-            </div>
-            <div class="blankspacesmallresponsive"></div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-            <div class="supportcontainer">
-              <p2 style="font-weight:bold">Download the App</p2>
-              <br>
-              <br>
-              <br>
-              <p><img src="images/downloadappstore.png" id="appstore">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/googleplay.png" id="googleplay"></p>
-  
-            </div></div></div>
+    </section>
+
+<!-- Responsive Gap between Cards and Containers !-->
+    <section id="bodySection">
+      <div class="blankSpaceLargeResponsive"></div>
+      <br>
+
+<!-- Popular FAQ Container !-->
+      <div class="row thin">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 offset-lg-2 offset-md-2 offset-sm-2 offset-xs-2">
+          <div class="supportContainer">
+            <p2 style="font-weight:bold">Popular FAQ</p2>
+            <br>
+            <br>
+            <ul><p1>
+              <li class="underlineLink">First Link</li>
+              <li class="underlineLink">Second Link</li>
+              <li class="underlineLink">Third Link</li>
+              <li class="underlineLink">Fourth Link</li>
+            </p1></ul>
+          </div>
+          <div class="blankSpaceSmall"></div>
+        </div>
+
+<!-- Download the App Container !-->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <div class="supportContainer">
+            <p2 style="font-weight:bold">Download the App</p2>
             <br>
             <br>
             <br>
-            <br>
-            <br>
-      </section>
-  </section>
-  <section id="footer">
-    <br>
-    <br>
-    <p2>Follow Us On:</p2>
-    <br>
-    <br>
-    <a href="#" class="fa fa-facebook" id="firsticon"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-instagram"></a>
-<br>
-<br>
-<br>
-<br>
-  </section>
+            <img src="images/downloadappstore.png" id="appStoreIcon">&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="images/googleplay.png" id="googlePlayIcon">
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </section>
+
+<!-- Footer Section !-->
+    <section id="footer">
+      <br>
+      <br>
+      <p2>Follow Us On:</p2>
+      <br>
+      <br>
+        <a href="#" class="fa fa-facebook" id="firsticon"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      <br>
+      <br>
+      <br>
+      <br>
+    </section>
 
 <!-- My Javascript Mobile Navigation !-->
     </body>

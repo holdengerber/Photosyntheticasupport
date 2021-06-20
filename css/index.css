@@ -1,570 +1,413 @@
-/* Hero banner background image */
-.bgimage {
-  position: relative;
-    width:100vw;
-    height:600px;
-    background: url('../images/supportbanner.jpg');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size:cover;
-    background-attachment: fixed;
-    background-color: #f0f0f0;
-  }
+/* Text Styles */
+    p1 {
+      font-family: 'roboto', sans-serif;
+      color: #272727;
+      font-size: 18px;
+      font-weight: 300;
+    }
 
-  /* Mobile logo */
-  @media only screen and (max-width: 768px)
-  {#logo {display:block;}}
-  
-  @media only screen and (min-width: 768px)
-  {#logo{display:none;}}
-  
-  #logo {
-    position:absolute;
-    top: 35px;
-    left: 5%;
-    width: 200px;
-    height: auto;
-  overflow:hidden;}
+    p2 {
+      font-size: 20px;
+      color: #022601;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+    }
 
-  /* Hero banner heading */
-  .bgimage h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 64px;
-    color: #034001;
-    text-shadow: 1px 1px  5px #ffffff
-  }
+/* Blank Spaces */
+    .blankSpace {
+      height: 100px !important;
+    }
 
-  .howTo h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-    color: #000000;
-  }
+    .blankSpaceSmall {
+      height: 40px !important;
+    }
 
-  .howTo {
-    text-align: center;
-  }
+    .blankSpaceLargeResponsive {
+      height: 150px;
+    }
 
-  @media only screen and (max-width: 800px) {
-  .bgimage p1 {display: none;}}
+    @media only screen and (max-width: 650px) {
+      .blankSpaceLargeResponsive {
+      height: 775px !important;
+      }
+    }
 
-  /* Paragraph text */
-  p1 {font-family: 'roboto', sans-serif;
-  color: #272727;
-font-size: 18px;
-font-weight: 300;}
-
-p2 {
-  font-size: 20px;
-  color: #022601;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
-p3 {
-  font-size: 24px;
-  color: #272727;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
-p4 {
-  font-size: 36px;
-  color: #272727;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
-p5 {font-weight: 400 !important;
-font-size: 24px;
-text-shadow: 1px 1px 5px #ffffff}
-
-.row p3 {color: #55A603;
-font-weight: bold;
-text-shadow: 1px 1px #ffffff;}
-
-@media only screen and (min-width: 575px)   {
-#firststep {
- padding-left: 10%;
-}}
-
-/* Hero banner text on mobile */
-@media only screen and (max-width: 600px)   {
-  #heading {
-    text-align:center !important;
-    padding-left: 8% !important;
-    padding-right: 8% !important;
-  }}
-
-  @media only screen and (min-width: 900px)  {
-  #heading {
-    margin-left: 12%;
-  }}
-
-  @media only screen and (min-width: 900px)  {
-    #mockup {
-      margin-left: 6%;
-    }}
-
-  @media only screen and (max-width: 900px)   {
-    #heading {
-      padding-left: 5%;
-    }}
-  
-/* Hero banner mockup spacing */
-  #mockup {
-    padding-left: 10%;
-  }
-
-  @media only screen and (max-width: 575px) 
-  {#mockup {padding: 0px;
-  }}
-
-  /* Hero banner mockup size */
-  #heromockup {
-    width: 300px;
-    height: auto;
-    box-shadow: 10px 10px 20px rgba(0,0,0,0.25);
-    border-radius: 50px;
-  }
-
-  @media only screen and (max-width: 575px)   {
-    #heromockup {
-      width: 60% !important;
-      height: auto !important;
-      display: block;
-  margin-left: auto;
-  margin-right: auto;}}
-
-/* Desktop navigation */
-  .navbar {
-    margin-left: 8%;
-  margin-right: 8%;}
-  
-.navigationItem {display: none;}
-
-.mobileNav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: white;
-  padding: 0px;
-  width: 100%;
-  height: 0vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all .5s ease;
-  overflow: hidden;
-  z-index: 1;
-}
-
-@media only screen and (max-width: 768px)
-{.hamburgerMenu {display:block;}}
-
-@media only screen and (min-width: 768px)
-{.hamburgerMenu {display:none;}}
-
-.hamburgerMenu {
-  position:absolute;
-  top: 35px;
-  right: 5%;
-  z-index: 2 !important;
-overflow:hidden;}
-
-.hamburger {
-  width: 7vw;
-  height: 5vw;
-  }
-  
-  .open 
-  {background: url(../images/Hamburger.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;}
-
-    .closed
-    {background: url(../images/Close.png);
-      background-repeat: no-repeat;
-      background-size: 80% 105%;}
-
-
-.active {display: block;}
-
-#mobileNavItems {
-  display: flex;
-  flex-direction: column;
-  opacity: 0;
-  color: black;
-  transition: all .5s ease;
-  text-align: center;
-}
-
-#mobileNavItems a {
-  color: black;
-}
-
-#appstore {
-width: 141px !important;
-height: 42px !important;
-margin-bottom: 3%;
-border-radius: 6px;}
-
-#appstore:hover {cursor: pointer;
-opacity: .8;}
-
-#googleplay {
-  width: 140px !important;
-  height: 42px !important;
-margin-bottom: 3%;
-border-radius: 6px;}
-
-  #googleplay:hover {cursor: pointer;
-    opacity: .8;}
-  
-
+/* Navigation Bar Background */
     @media only screen and (min-width: 768px) {
-#navbackground {
-  background: #ffffff;
-}}
+      #navBackground {
+        background: #ffffff;
+      }
+    }
 
-.heroline {height: 2px;
-width: 200px;
-background: #000000;
-text-shadow: 2px 2px #ffffff;}
-
-@media only screen and (max-width: 600px)  
-{.heroline {display: none !important;}}
-
-.nav-link p2:hover {color: #267302 !important;}
-
-@media only screen and (max-width: 560px) {
-.descriptionone {text-align: center;}}
-
-.descriptionone {padding-bottom: 5%;}
-
-@media only screen and (max-width: 600px) {
-.subheadone {text-align: center;}}
-
-@media only screen and (max-width: 600px) {
-  #searchplant{display: block;
-    margin-left: auto;
-    margin-right: auto;}}
-
-    #searchplant{
-      box-shadow: 10px 10px 20px rgba(0,0,0,0.25);
-    border-radius: 35px;}
-
-      .thinline {height: 2px;
-        width: 200px;
-        background: #527AE2;
-      margin-left: auto;
-    margin-right: auto;}
-
-    @media only screen and (min-width: 575px) {
-    .blankspace {height: 100px !important;}}
+    #navBackground {
+      background: #ffffff;
+      min-height: 100px;
+      }
 
     @media only screen and (max-width: 575px) {
-      .blankspace {height: 10px;}}
+      #navBackground {
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.05);
+      }
+    }
 
-      @media only screen and (min-width: 575px) {
-        .blankspacesmall {height: 70px !important;}}
-    
-        @media only screen and (max-width: 575px) {
-          .blankspacesmall {height: 40px;}}
+/* Desktop Navigation Links */
+    .navbar {
+      margin-left: 8%;
+      margin-right: 8%;
+    }
 
-      #elementsofplant {
-        position: relative;
-    width:100vw;
-    height:500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-    background-attachment: fixed;
-    padding-bottom: 5%;
-        height: 100%;
-        background: #f0f0f0;
-        box-shadow: 
-        inset 0px 11px 16px -10px rgba(0,0,0,0.3),
-        inset 0px -11px 16px -10px rgba(0,0,0,0.3); 
-     }
-  
-     @media only screen and (max-width: 600px) {
-     .herosubhead {
-       display: none;
-     }}
+    .navigationItem {
+      display: none;
+    }
 
- .element {
-      box-shadow: 10px 10px 20px rgba(0,0,0,0.08);
-      border-radius: 100px;
-      margin-top: 10px;
-      margin-bottom: 10px;
+    .nav-link p2:hover {
+      color: #267302 !important;
+    }
+
+    .selected {
+      width: 80%;
+      height: 1px;
+      background: #55A603;
       margin-left: auto;
       margin-right: auto;
-      border: 35px solid white;
-     }
+    }
 
-   .card-deck {margin-left: 8% !important;
-  margin-right: 8% !important;}
+/* Mobile Navigation */
+    .mobileNav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: white;
+      padding: 0px;
+      width: 100%;
+      height: 0vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .5s ease;
+      overflow: hidden;
+      z-index: 1;
+      }
+          
+    @media only screen and (max-width: 768px) {
+      .hamburgerMenu {
+        display:block;
+      }
+    }
 
-  .card {
-    background: none !important;
-    border: 0px !important;
-  }
+    @media only screen and (min-width: 768px) {
+      .hamburgerMenu {
+        display:none;
+      }
+    }
 
-  .card-footer {
-    background: none !important;
-    border: 0px !important;
-  }
+    .hamburgerMenu {
+      position:absolute;
+      top: 35px;
+      right: 5%;
+      z-index: 2 !important;
+      overflow:hidden;
+    }
 
-  .card-title {text-align: center !important;
-  font-size: 24px !important;}
+    .hamburger {
+      width: 7vw;
+      height: 5vw;
+    }
+      
+    .open {
+      background: url(../images/Hamburger.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
 
-  .card-text {text-align: center !important;
-    font-size: 18px !important;
-    font-weight: 300;
-  text-shadow: 2px 2px  5px #ffffff;}
-    
+    .closed {
+      background: url(../images/Close.png);
+      background-repeat: no-repeat;
+      background-size: 80% 105%;
+    }
 
-    #footer {background: #034001;
-    height: 100%;
-  text-align: center;}
+    .active {
+      display: block;
+    }
 
-  #footer p2 {color: white;
-    font-weight: 300;}
+    #mobileNavItems {
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      color: black;
+      transition: all .5s ease;
+      text-align: center;
+    }
 
-  #footer a {font-size: 50px !important;}
-
-  #footer a:hover {color: white;
-  text-decoration: none;}
-
-  .fa {
-    padding: 20px;
-    width: 100px;
-    font-size: 50px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-  }
-
-  #firsticon {padding-left: none !important;
-  padding-right: 20px;}
+    #mobileNavItems a {
+      color: black;
+    }
   
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.8;
+/* Logo on Mobile Navigation */
+    @media only screen and (max-width: 768px) {
+      #logo {
+        display: block;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      #logo {
+        display: none;
+      }
+    }
+
+    #logo {
+      position:absolute;
+      top: 35px;
+      left: 5%;
+      width: 200px;
+      height: auto;
+      overflow:hidden;
+    }
+
+/* Hero Banner Background Image */
+    #herobg {
+      position: relative;
+      width:100vw;
+      height:600px;
+      background: url('../images/supportbanner.jpg');
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size:cover;
+      background-attachment: fixed;
+      background-color: #f0f0f0;
+    }
+
+/* Hero Banner Heading */
+    @media only screen and (max-width: 650px) {
+      .heroBannerContent {
+        margin-left: 5%;
+        margin-right: 5%
+      }
+    }
+
+    #herobg h1 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      font-size: 64px;
+      color: #034001;
+      text-shadow: 1px 1px  5px #ffffff
+    }
+
+/* App Download Buttons */
+  #appStoreIcon {
+    width: 141px !important;
+    height: 42px !important;
+    margin-bottom: 3%;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
   }
 
-  .leafThing{
-  position: relative;
-  color: white;
-  padding-bottom: 50px;
-}
+  #appStoreIcon:hover {
+    cursor: pointer;
+    opacity: .8;
+  }
 
-.bottom-right {
-  position: absolute !important;
-  bottom: 120px;
-}
+  #googlePlayIcon {
+    width: 140px !important;
+    height: 42px !important;
+    margin-bottom: 3%;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  }
 
-.bottom-left {
-  position: absolute !important;
-  bottom: 120px;
-}
+  #googlePlayIcon:hover {
+    cursor: pointer;
+    opacity: .8;
+  }
 
-@media only screen and (max-width: 575px)  {
-  .bottom-left {
-    position: absolute !important;
-    top: 50%;
-    left: 50% !important;
-    bottom: auto !important;
-    transform: translate(-50%, -50%);
-    min-width: 400px;
-  }}
-
-@media only screen and (max-width: 575px)  {
-.bottom-right {
-  position: absolute !important;
-  top: 50%;
-  left: 50% !important;
-  bottom: auto !important;
-  transform: translate(-50%, -50%);
-  min-width: 400px;
-}}
-
-#leaf {opacity: .6;
-  left: -100px !important;
-  z-index: 99 !important;}
-
-@media only screen and (max-width: 650px)  {
-  #leaf {width: 250px !important;
-  height: auto;
-}}
-
-#leafreverse {opacity: .6;
-  right: -100px !important;
-  z-index: 99 !important;}
-
-@media only screen and (max-width: 650px)  {
-  #leafreverse {width: 250px !important;
-  height: auto;
-}}
-
-
-.blankspaceresponsive {height: 100px !important;}
-
-.blankspacesmallresponsive {height: 40px !important;}
-
-.input-group {height: 60px !important;
+/* Search Bar */
+.input-group {
+  height: 60px !important;
   box-shadow: 10px 10px 20px rgba(0,0,0,0.15);
-  border-radius: 5px 5px 5px 5px !important}
+  border-radius: 5px 5px 5px 5px !important;
+}
 
-.form-control {height: 60px !important;
-background: hsl(0, 0%, 93%);}
+.form-control {
+  height: 60px !important;
+  background: hsl(0, 0%, 93%);
+}
 
-.rounder {
+.rounded {
   border-radius: 5px 0px 0px 5px !important;
 }
 
-.btn {background: #55A603 !important;
+.btn {
+  background: #55A603 !important;
   border-radius: 0px 5px 5px 0px !important;
   color: white !important;
   padding-left: 60px !important;
   padding-right: 60px !important;
 }
 
-.btn:hover {background: #478D01 !important;}
+@media only screen and (max-width: 650px)  {
+  .btn {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
 
-#featuredblog {text-align: center;}
+.btn:hover {
+  background: #478D01 !important;
+}
 
-.center {text-align: center;}
-
-.supportcard {
+/* Support Cards */
+.supportCard {
   width: 80%;
-height: auto;
-padding-top: 15%;
-padding-bottom: 7%;
-padding-left: 0px !important;
-padding-right: 0px !important;
-background: #ffffff;
-box-shadow: 10px 10px 20px rgba(0,0,0,0.15);
-border: solid 1px rgb(206, 206, 206);
-border-radius: 4px;}
-
-.threecolumnmiddle{
-  margin-left: auto;
-margin-right: auto;
+  height: auto;
+  padding-top: 15%;
+  padding-bottom: 7%;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  background: #ffffff;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.15);
+  border: solid 1px rgb(206, 206, 206);
+  border-radius: 4px;
 }
 
-.threecolumnright{
+.middleCard {
   margin-left: auto;
-}
-
-@media only screen and (max-width: 800px) and (min-width: 600px) {.supportcard {width: 100% !important}}
-
-@media only screen and (max-width: 600px)  {.supportcard {
-  margin-left: auto !important;
   margin-right: auto;
-  width: 60% !important;
-  height: 80% !important;
-}}
-
-.supportcard:hover {transform:scale(1.02,1.02);
-  transition: 1s;
-cursor: pointer;}
-
-.supportcard p2 {color: #55A603;
-font-weight: bold;
 }
 
-@media only screen and (max-width: 850px) and (min-width: 570px) {.supportcard p2 {display: none}}
+.rightCard {
+  margin-left: auto;
+}
 
-.supportitem {
+.center {
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+  .supportCard {
+    width: 100% !important
+  }
+}
+
+@media only screen and (max-width: 600px)  {
+  .supportCard {
+    margin-left: auto !important;
+    margin-right: auto;
+    width: 60% !important;
+    height: 80% !important;
+  }
+}
+
+.supportCard:hover {
+  transform: scale(1.02,1.02);
+  transition: 1s;
+  cursor: pointer;
+}
+
+.supportCard p2 {
+  color: #55A603;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 850px) and (min-width: 570px) {
+  .supportCard p2 {
+    display: none
+  }
+}
+
+.supportItem {
   height: 50px;
   width: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media only screen and (max-width: 850px)  {
-.supportitem {
+@media only screen and (max-width: 850px) {
+.supportItem {
   height: 55px !important;
   width: auto !important;
-}}
-
-@media only screen and (max-width: 800px) and (min-width: 575px) {.supportitem {
-  height: 40px !important;
-  width: auto !important;
-}}
-
-#body {background: #f0f0f0;
-height: auto;}
-
-.supportcontainer {
-  border: solid 1px rgb(206, 206, 206);
-  padding-left: 7%;
-  padding-right: 7%;
-  padding-top: 7%;
-  padding-bottom: 3%;
-  min-height: 250px;
-  background: white;
-  border-radius: 3px;
+  }
 }
 
-@media only screen and (max-width: 650px)  {.supportcontainer {
-  margin-left: 5%;
-  margin-right: 5%;
-}}
-
-@media only screen and (max-width: 650px)  {
-#herocontent {margin-left: 5%;
-  margin-right: 5%}
+@media only screen and (max-width: 800px) and (min-width: 575px) {
+  .supportItem {
+    height: 40px !important;
+    width: auto !important;
+  }
 }
 
+/* Body Section */
+#bodySection {
+  background: #f0f0f0;
+  height: auto;
+}
+
+/* Support Containers */
+  .supportContainer {
+    border: solid 1px rgb(206, 206, 206);
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 7%;
+    padding-bottom: 3%;
+    min-height: 250px;
+    background: white;
+    border-radius: 3px;
+  }
+
 @media only screen and (max-width: 650px)  {
-  .btn {padding-left: 30px !important;
-    padding-right: 30px !important;
+  .supportContainer {
+    margin-left: 5%;
+    margin-right: 5%;
   }
+}
+
+/* Popular FAQ List */
+.underlineLink {
+  text-decoration: underline;
+}
+
+.underlineLink:hover {
+  color: #267302 !important;
+  cursor: pointer;
+}
+
+/* Footer */
+#footer {
+  background: #034001;
+  height: 100%;
+  text-align: center;
+}
+  
+#footer p2 {
+  color: white;
+  font-weight: 300;
+}        
+        
+/* Footer Social Media Icons */ 
+ #footer a {
+  font-size: 50px !important;
+}
+  
+#footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+  
+.fa {
+  padding: 20px;
+  width: 100px;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
   }
-
-  .underlinelink {text-decoration: underline}
-
-  .underlinelink:hover {color: #267302 !important;
-  cursor: pointer}
-
-  #appstore {
-    width: 168px !important;
-    height: 50px !important;
-    margin-bottom: 3%;
-    border-radius: 6px;}
+  
+#firsticon {
+  padding-left: none !important;
+  padding-right: 20px;
+}
     
-    #appstore:hover {cursor: pointer;
-    opacity: .8;}
-    
-    #googleplay {
-      width: 168px !important;
-      height: 50px !important;
-    margin-bottom: 3%;
-    border-radius: 6px;}
-    
-      #googleplay:hover {cursor: pointer;
-        opacity: .8;}
-
-        .responsivegap {
-          height: 150px;
-        }
-
-        @media only screen and (max-width: 650px)  {.responsivegap {
-          height: 775px !important;
-        }}
-
-        .selectedlink {width: 80%;
-          height: 1px;
-        background: #55A603;
-      margin-left: auto;
-    margin-right: auto;}
-
-    @media only screen and (max-width: 575px) {
-      #navBackground {
-          box-shadow: 0px 10px 20px rgba(0,0,0,0.05);
-          }
-        }
-    
+.fa:hover {
+  opacity: 0.8;
+  }
+ 
