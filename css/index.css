@@ -195,219 +195,218 @@
     }
 
 /* App Download Buttons */
-  #appStoreIcon {
-    width: 141px !important;
-    height: 42px !important;
-    margin-bottom: 3%;
-    border-radius: 6px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-  }
+    #appStoreIcon {
+      width: 141px !important;
+      height: 42px !important;
+      margin-bottom: 3%;
+      border-radius: 6px;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    }
 
-  #appStoreIcon:hover {
-    cursor: pointer;
-    opacity: .8;
-  }
+    #appStoreIcon:hover {
+      cursor: pointer;
+      opacity: .8;
+    }
 
-  #googlePlayIcon {
-    width: 140px !important;
-    height: 42px !important;
-    margin-bottom: 3%;
-    border-radius: 6px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-  }
+    #googlePlayIcon {
+      width: 140px !important;
+      height: 42px !important;
+      margin-bottom: 3%;
+      border-radius: 6px;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    }
 
-  #googlePlayIcon:hover {
-    cursor: pointer;
-    opacity: .8;
-  }
+    #googlePlayIcon:hover {
+      cursor: pointer;
+      opacity: .8;
+    }
 
 /* Search Bar */
-.input-group {
-  height: 60px !important;
-  box-shadow: 10px 10px 20px rgba(0,0,0,0.15);
-  border-radius: 5px 5px 5px 5px !important;
-}
+    .input-group {
+      height: 60px !important;
+      background-color: rgba(0,0,0,0);
+      box-shadow: 10px 10px 20px rgba(0,0,0,0.15);
+      border-radius: 0px 5px 5px 0px !important;
+    }
 
-.form-control {
-  height: 60px !important;
-  background: hsl(0, 0%, 93%);
-}
+    .form-control {
+      height: 60px !important;
+      background: hsl(0, 0%, 93%);
+      border-radius: 5px 0px 0px 5px !important;
+    }
 
-.rounded {
-  border-radius: 5px 0px 0px 5px !important;
-}
+    .btn {
+      background: #55A603 !important;
+      border-radius: 0px 5px 5px 0px !important;
+      color: white !important;
+      letter-spacing: 1px;
+      padding-left: 60px !important;
+      padding-right: 60px !important;
+    }
 
-.btn {
-  background: #55A603 !important;
-  border-radius: 0px 5px 5px 0px !important;
-  color: white !important;
-  padding-left: 60px !important;
-  padding-right: 60px !important;
-}
+    @media only screen and (max-width: 650px)  {
+      .btn {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+      }
+    }
 
-@media only screen and (max-width: 650px)  {
-  .btn {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
-  }
-}
-
-.btn:hover {
-  background: #478D01 !important;
-}
+    .btn:hover {
+      background: #478D01 !important;
+    }
 
 /* Support Cards */
-.supportCard {
-  width: 80%;
-  height: auto;
-  padding-top: 15%;
-  padding-bottom: 7%;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-  background: #ffffff;
-  box-shadow: 10px 10px 20px rgba(0,0,0,0.15);
-  border: solid 1px rgb(206, 206, 206);
-  border-radius: 4px;
-}
+    .supportCard {
+      width: 80%;
+      height: auto;
+      padding-top: 15%;
+      padding-bottom: 7%;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      background: #ffffff;
+      box-shadow: 10px 10px 20px rgba(0,0,0,0.15);
+      border: solid 1px rgb(206, 206, 206);
+      border-radius: 4px;
+    }
 
-.middleCard {
-  margin-left: auto;
-  margin-right: auto;
-}
+    .middleCard {
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-.rightCard {
-  margin-left: auto;
-}
+    .rightCard {
+      margin-left: auto;
+    }
 
-.center {
-  text-align: center;
-}
+    .center {
+      text-align: center;
+    }
 
-@media only screen and (max-width: 800px) and (min-width: 600px) {
-  .supportCard {
-    width: 100% !important
-  }
-}
+    @media only screen and (max-width: 800px) and (min-width: 600px) {
+      .supportCard {
+        width: 100% !important
+      }
+    }
 
-@media only screen and (max-width: 600px)  {
-  .supportCard {
-    margin-left: auto !important;
-    margin-right: auto;
-    width: 60% !important;
-    height: 80% !important;
-  }
-}
+    @media only screen and (max-width: 600px)  {
+      .supportCard {
+        margin-left: auto !important;
+        margin-right: auto;
+        width: 60% !important;
+        height: 80% !important;
+      }
+    }
 
-.supportCard:hover {
-  transform: scale(1.02,1.02);
-  transition: 1s;
-  cursor: pointer;
-}
+    .supportCard:hover {
+      transform: scale(1.02,1.02);
+      transition: 1s;
+      cursor: pointer;
+    }
 
-.supportCard p2 {
-  color: #55A603;
-  font-weight: bold;
-}
+    .supportCard p2 {
+      color: #55A603;
+      font-weight: bold;
+    }
 
-@media only screen and (max-width: 850px) and (min-width: 570px) {
-  .supportCard p2 {
-    display: none
-  }
-}
+    @media only screen and (max-width: 850px) and (min-width: 570px) {
+      .supportCard p2 {
+        display: none
+      }
+    }
 
-.supportItem {
-  height: 50px;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
+    .supportItem {
+      height: 50px;
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-@media only screen and (max-width: 850px) {
-.supportItem {
-  height: 55px !important;
-  width: auto !important;
-  }
-}
+    @media only screen and (max-width: 850px) {
+    .supportItem {
+      height: 55px !important;
+      width: auto !important;
+      }
+    }
 
-@media only screen and (max-width: 800px) and (min-width: 575px) {
-  .supportItem {
-    height: 40px !important;
-    width: auto !important;
-  }
-}
+    @media only screen and (max-width: 800px) and (min-width: 575px) {
+      .supportItem {
+        height: 40px !important;
+        width: auto !important;
+      }
+    }
 
 /* Body Section */
-#bodySection {
-  background: #f0f0f0;
-  height: auto;
-}
+    #bodySection {
+      background: #f0f0f0;
+      height: auto;
+    }
 
 /* Support Containers */
-  .supportContainer {
-    border: solid 1px rgb(206, 206, 206);
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 7%;
-    padding-bottom: 3%;
-    min-height: 250px;
-    background: white;
-    border-radius: 3px;
-  }
+    .supportContainer {
+      border: solid 1px rgb(206, 206, 206);
+      padding-left: 7%;
+      padding-right: 7%;
+      padding-top: 7%;
+      padding-bottom: 3%;
+      min-height: 250px;
+      background: white;
+      border-radius: 3px;
+    }
 
-@media only screen and (max-width: 650px)  {
-  .supportContainer {
-    margin-left: 5%;
-    margin-right: 5%;
+  @media only screen and (max-width: 650px)  {
+    .supportContainer {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
   }
-}
 
 /* Popular FAQ List */
-.underlineLink {
-  text-decoration: underline;
-}
+    .underlineLink {
+      text-decoration: underline;
+    }
 
-.underlineLink:hover {
-  color: #267302 !important;
-  cursor: pointer;
-}
+    .underlineLink:hover {
+      color: #267302 !important;
+      cursor: pointer;
+    }
 
 /* Footer */
-#footer {
-  background: #034001;
-  height: 100%;
-  text-align: center;
-}
-  
-#footer p2 {
-  color: white;
-  font-weight: 300;
-}        
-        
+    #footer {
+      background: #034001;
+      height: 100%;
+      text-align: center;
+    }
+      
+    #footer p2 {
+      color: white;
+      font-weight: 300;
+    }        
+            
 /* Footer Social Media Icons */ 
- #footer a {
-  font-size: 50px !important;
-}
-  
-#footer a:hover {
-  color: white;
-  text-decoration: none;
-}
-  
-.fa {
-  padding: 20px;
-  width: 100px;
-  font-size: 50px;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  }
-  
-#firsticon {
-  padding-left: none !important;
-  padding-right: 20px;
-}
+    #footer a {
+      font-size: 50px !important;
+    }
+      
+    #footer a:hover {
+      color: white;
+      text-decoration: none;
+    }
+      
+    .fa {
+      padding: 20px;
+      width: 100px;
+      font-size: 50px;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      }
+      
+    #firsticon {
+      padding-left: none !important;
+      padding-right: 20px;
+    }
+        
+    .fa:hover {
+      opacity: 0.8;
+      }
     
-.fa:hover {
-  opacity: 0.8;
-  }
- 
