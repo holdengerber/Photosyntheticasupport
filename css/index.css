@@ -32,6 +32,16 @@
       }
     }
 
+    .blankSpaceSmallResponsive {
+      height: 40px !important;
+    }
+
+    @media only screen and (max-width: 650px) {
+      .blankSpaceSmallResponsive {
+        height: 0px !important;
+      }
+    }
+
 /* Navigation Bar Background */
     @media only screen and (min-width: 768px) {
       #navBackground {
