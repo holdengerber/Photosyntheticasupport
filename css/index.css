@@ -18,6 +18,16 @@
       height: 100px !important;
     }
 
+    .blankSpaceSmallerResponsive {
+      height: 120px !important;
+    }
+
+    @media only screen and (max-width: 650px) {
+      .blankSpaceSmallerResponsive {
+      height: 700px !important;
+      }
+    }
+
     .blankSpaceSmall {
       height: 40px !important;
     }
@@ -179,7 +189,7 @@
     #herobg {
       position: relative;
       width:100vw;
-      height:600px;
+      height:100vh;
       background: url('../images/supportbanner.jpg');
       background-repeat: no-repeat;
       background-position: center top;
@@ -382,24 +392,25 @@
 
 /* Footer */
     #footer {
-      background: #034001;
+      background: #C4D9BA;
       height: 100%;
       text-align: center;
     }
       
     #footer p2 {
-      color: white;
+      color: #000000;
       font-weight: 300;
     }        
             
 /* Footer Social Media Icons */ 
     #footer a {
-      font-size: 50px !important;
+      font-size: 40px !important;
     }
       
     #footer a:hover {
-      color: white;
       text-decoration: none;
+      opacity: .8;
+      color: #000000;
     }
       
     .fa {
@@ -408,7 +419,7 @@
       font-size: 50px;
       text-align: center;
       text-decoration: none;
-      color: white;
+      color: #000000;
       }
       
     #firsticon {
