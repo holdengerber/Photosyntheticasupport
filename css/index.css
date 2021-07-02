@@ -392,14 +392,14 @@
 
 /* Footer */
     #footer {
-      background: #C4D9BA;
+      background: #022601;
       height: 100%;
       text-align: center;
     }
       
-    #footer p2 {
-      color: #000000;
-      font-weight: 300;
+    #footer p1 {
+      color: #ffffff;
+      opacity: .6;
     }        
             
 /* Footer Social Media Icons */ 
@@ -410,7 +410,7 @@
     #footer a:hover {
       text-decoration: none;
       opacity: .8;
-      color: #000000;
+      color: #ffffff;
     }
       
     .fa {
@@ -419,7 +419,7 @@
       font-size: 50px;
       text-align: center;
       text-decoration: none;
-      color: #000000;
+      color: #ffffff;
       }
       
     #firsticon {
